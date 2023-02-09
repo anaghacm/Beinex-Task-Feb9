@@ -1,0 +1,66 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/mixins';
+
+.review-module{
+    padding-top:$spacer-2 ;
+    
+    .form-control{
+        background-color: #fff9;
+        border-radius: 0;
+        border: none;
+        color: $color-primary;
+        font-size: $font-sm;
+
+        &:focus{
+            box-shadow: none;
+        }
+    }
+    textarea{
+        resize: none;
+    }
+    .form-div{
+        text-align: center;
+    }
+    .btn-submit{
+        background-color: $color-contrasting;
+        color: $color-primary;
+        padding: $spacer-md $spacer-2;
+        border-radius: 0;
+        margin-top: $spacer-2;
+        &:hover{
+            background-color: $color-primary;
+            color: $color-contrasting;
+            border: 1px solid $color-contrasting;
+        }
+    }
+    .display-review{
+        height: 180px;
+        padding: $spacer-2 $spacer-4;
+        background-color: $color-bg;
+        border: 1px solid $color-white;
+        font-size: $font-sm;
+
+        p{
+            padding-right: $spacer-1;
+        }
+    }
+    .values{
+        overflow: auto;
+        max-height: 50px;
+        font-weight: 100;
+    }
+    .heading{
+        font-size: $font-xl;
+        font-weight: 700;
+        text-align: center;
+        padding-bottom: $spacer-2;
+    }
+}
+
+@include mobile{
+    .review-module{
+        .display-review{
+            margin: $spacer-1 $spacer-0;
+        }
+    }
+}

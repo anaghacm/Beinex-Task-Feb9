@@ -1,0 +1,20 @@
+@import '../assets/scss/variables';
+
+.base-module{
+    background-color: $color-bg;
+    
+    .container-fluid{
+        padding: 12px;
+    }
+    .base-div{
+        border: 2px solid white;
+        overflow: hidden;
+    }
+    
+    .main-section{
+        background-image:linear-gradient(rgba(30,30,40, 0.9),rgb(30,30,40)),url('../assets/images/banner1.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

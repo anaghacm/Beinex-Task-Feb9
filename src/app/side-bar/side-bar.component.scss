@@ -1,0 +1,63 @@
+@import '../../assets/scss/variables';
+
+.side-module{
+    .name-div{
+        background-color: $color-primary;
+        height: 40%;
+        color: $color-white;
+        padding: $spacer-4 $spacer-0;
+    }
+    .image{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-image: url('../../assets/images/profile.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .name-text{
+        font-size: $font-md;
+        font-weight: 700;
+        padding-top: $spacer-2;
+        margin: 0;
+    }
+    .job-text{
+        font-size: $font-sm;
+        font-weight: 100;
+        padding-top: $spacer-md;
+        margin: 0;
+    }
+    .address-div{
+        padding: $spacer-2 $spacer-4 $spacer-1;
+        color: $color-white;
+        font-size: $font-sm;
+    }
+    .residance, .city, .age{
+        padding-bottom: $spacer-1;
+    }
+    .values{
+        font-weight: 100;
+    }
+    .address-divider{
+        height: 1px;
+        width: 100%;
+        color: $color-white;
+    }
+    .skill-list{
+        font-weight: 100;
+        font-size: $font-sm;
+        p{
+            padding-right: $spacer-2;
+        }
+        
+    }
+    .socialmedia-div{
+        background-color: $color-primary;
+        text-align: center;
+        padding: $spacer-md $spacer-0;
+    }
+    .sm-links{
+        padding: $spacer-0 $spacer-2;
+    }
+}

@@ -1,0 +1,42 @@
+<section class="side-module">
+    <div class="name-div d-flex flex-column align-items-center">
+        <div class="image">
+        </div>
+        <p class="name-text">{{name}}</p>
+        <p class="job-text">{{job}}</p>
+    </div>
+    <div class="address-div">
+        <div class="residance d-flex justify-content-between">
+            <p>Residence : </p>
+            <p class="values">{{nation}}</p>
+        </div>
+        <div class="city d-flex justify-content-between">
+            <p>City : </p>
+            <p class="values">{{city}}</p>
+        </div>
+        <div class="age d-flex justify-content-between">
+            <p>Age : </p>
+            <p class="values">{{age}}</p>
+        </div>
+        <hr [class]="dividerClass">
+        <div class="skills">
+            <p>Skills :</p>
+            <div class="skill-list d-flex flex-wrap justify-content-center">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>SCSS</p>
+                <p>Bootstrap</p>
+                <p>ANgular</p>
+                <p>Node.js</p>
+                <p>Express</p>
+                <p>MongoDB</p>
+                <p>React</p>
+            </div>
+        </div>
+    </div>
+    <div class="socialmedia-div">
+        <a href="" class="sm-links" [style.color]="'#ffc107'"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="" class="sm-links" [style.color]="'#ffc107'"><i class="fa-brands fa-github"></i></a>
+        <a href="" class="sm-links" [style.color]="'#ffc107'"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+</section>

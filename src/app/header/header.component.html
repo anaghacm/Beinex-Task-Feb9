@@ -1,0 +1,13 @@
+<header class="header-module">
+    <div class="container-fluid">
+        <div class="header-base">
+            <p class="head-text">Discover my Amazing <br> Art Space!</p>
+            <button class="btn btn-explore" (click)="viewEducation()">Education <i class="fa-solid fa-graduation-cap"></i></button>
+            <button class="btn btn-explore" (click)="viewHobbies()">Hobbies <i class="fa-solid fa-music"></i></button>
+            <button class="btn btn-review" (click)="viewReview()">Write Review</button>
+        </div>
+        <div class="display-div">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</header>

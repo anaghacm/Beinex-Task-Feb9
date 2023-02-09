@@ -1,0 +1,27 @@
+@import '../../../assets/scss/variables';
+
+.hobbies-module {
+    padding-top: $spacer-2 ;
+text-align: center;
+    .top-head{
+        font-size: $font-xl;
+        font-weight: 600;
+        padding-bottom: $spacer-2;
+        i{
+            color: $color-contrasting;
+            padding-left: $spacer-2;
+            font-size: 30px;
+        }
+        &:hover i{
+            animation: resizeicon 1s ease-in-out;
+        }
+    }
+    .item{
+        font-size: $font-md;
+    }
+    .item-icon{
+        font-size: 50px;
+        color: $color-contrasting;
+        padding-top: $spacer-3;
+    }
+}

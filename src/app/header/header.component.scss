@@ -1,0 +1,57 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+
+.header-module {
+    padding: $spacer-4 $spacer-3 $spacer-0;
+
+    .header-base{
+        background-image: linear-gradient(rgba(30, 30, 40, 0.7), rgba(30, 30, 40, 0.7)), url('../../assets/images/banner1.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: $color-white;
+        padding: $spacer-3 $spacer-2;
+    }
+    .head-text{
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 50px;
+        padding: $spacer-4 $spacer-0;
+    }
+    .btn-explore{
+        background-color: $color-contrasting;
+        color: $color-primary;
+        padding: $spacer-1 $spacer-3;
+        border-radius: 0;
+        margin-right: $spacer-3;
+        &:hover i {
+            animation: rotateicon 1s ease-in-out;
+        }
+    }
+    .btn-review{
+        color: $color-contrasting;
+        text-decoration: underline;
+        float: right;
+        padding: $spacer-3 $spacer-0;
+    }
+    .display-div{
+        color: $color-white;
+        padding: $spacer-3 $spacer-2 $spacer-0;
+    }
+}
+
+@include mobile{
+    .header-module{
+        .header-base{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .btn-explore{
+            margin: $spacer-1;
+        }
+    }
+    
+}

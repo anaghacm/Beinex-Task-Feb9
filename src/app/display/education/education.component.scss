@@ -1,0 +1,29 @@
+@import '../../../assets/scss/variables';
+
+.education-module {
+    padding-top: $spacer-2 ;
+
+    .top-head{
+        font-size: $font-xl;
+        text-align: center;
+        font-weight: 600;
+        padding-bottom: $spacer-2;
+        
+        i{
+            color: $color-contrasting;
+            padding-left: $spacer-2;
+            font-size: 30px;
+        }
+        &:hover i{
+            animation: resizeicon 1s ease-in-out;
+        }
+    }
+    .course{
+        color: $color-contrasting;
+        font-size: $font-md;
+    }
+    .other-details{
+        font-size: $font-sm;
+        font-weight: 100;
+    }
+}
